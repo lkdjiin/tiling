@@ -5,12 +5,12 @@
 require 'rake'
 require 'rspec/core/rake_task'
 
-desc 'Test GEM'
+desc 'Test wlayout'
 task :default => :spec
 
-desc 'Test GEM with rspec'
+desc 'Test wlayout with rspec'
 RSpec::Core::RakeTask.new(:spec) do |t|
-  t.rspec_opts = ['--color --format documentation']
+  t.rspec_opts = ['--color']
 end
 
 desc 'Check for code smells'
@@ -22,14 +22,10 @@ task :reek do
   sh "reek --quiet #{args} | ./reek.sed"
 end
 
-desc 'Build GEM & install it'
+desc 'Build wlayout & install it'
 task :install do
-  sh "gem build GEM.gemspec"
-	f = FileList['GEM*gem'].to_a
-	sh "gem install #{f.first} --no-rdoc --no-ri"
-end
-
-desc 'Generate yard documentation for developpers'
-task :doc do 
-	exec 'yardoc --title "GEM Documentation" - NEWS COPYING VERSION'
+  sh "rm wlayout*gem"
+  sh "gem build wlayout.gemspec"
+	f = FileList['wlayout*gem'].to_a
+	sh "gem install #{f.first}"
 end
