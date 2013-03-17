@@ -1,8 +1,6 @@
 #!/usr/bin/env ruby
 # -*- encoding: utf-8 -*-
 
-File.open("date", 'w') {|f| f.write(Time.now) }
-
 gem 'ruby-wmctrl', '0.0.5'
 require 'wmctrl'
 
