@@ -4,8 +4,6 @@
 $LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'
 $WLAYOUT_PATH = File.expand_path(File.dirname(__FILE__)) + '/..'
 
-gem 'ruby-wmctrl', '0.0.5'
-require 'wmctrl'
 require 'wlayout'
 
 
