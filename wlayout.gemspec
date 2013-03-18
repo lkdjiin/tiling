@@ -3,7 +3,7 @@
 require 'rake'
 
 Gem::Specification.new do |s|
-  s.name = ''
+  s.name = 'wlayout'
   s.version = File.read('VERSION').strip
   s.authors = ['Xavier Nayrac']
   s.email = 'xavier.nayrac@gmail.com'
