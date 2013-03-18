@@ -22,7 +22,12 @@ task :reek do
   sh "reek --quiet #{args} | ./reek.sed"
 end
 
-desc 'Build wlayout & install it'
+desc 'Check refactoring candidates'
+task :flay do
+  sh "flay lib/*.rb"
+end
+
+desc 'Build gem & install it'
 task :install do
   sh "rm wlayout*gem"
   sh "gem build wlayout.gemspec"
