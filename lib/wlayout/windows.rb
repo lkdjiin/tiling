@@ -1,7 +1,17 @@
 # -*- encoding: utf-8 -*-
 
 module WLayout
-  # Public: Position windows of a given workspace.
+
+  # Public: Find our windows.
+  #
+  # FIXME: Cette classe fait trop de choses
+  #   * Elle trouve les fenêtres
+  #   * Elle calcule la position du master
+  #   * Elle positionne le master
+  #   * Elle calcule la position des fenêtres restantes
+  #   * Elle positionne les fenêtres restantes
+  #   * Elle prend la decision de quitter si pas du tout de fenêtres
+  #   * Elle prend la decision de quitter si pas de fenêtres restantes
   class Windows
 
     def initialize workspace

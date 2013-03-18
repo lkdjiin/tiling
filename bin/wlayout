@@ -6,7 +6,5 @@ $WLAYOUT_PATH = File.expand_path(File.dirname(__FILE__)) + '/..'
 
 require 'wlayout'
 
-
-workspace = WLayout::Workspace.new
-windows = WLayout::Windows.new workspace
+WLayout.run
 
