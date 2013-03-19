@@ -4,7 +4,7 @@ require 'optparse'
 
 module WLayout
 
-  # Public: 
+  # Public: Set the options.
   class Option
 
     def initialize

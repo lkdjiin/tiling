@@ -9,9 +9,9 @@ module WLayout
 
       def calculate_master
         @master[:width_exterior] = (@workspace.width - @workspace.x) / 2
-        ext = @master[:frame_extents]
-        @master[:width] = @master[:width_exterior] - ext[0] - ext[1]
-        @master[:height] = @workspace.height - ext[2] - ext[3]
+        ext = FrameExtents.new(@master[:frame_extents])
+        @master[:width] = @master[:width_exterior] - ext.left - ext.right
+        @master[:height] = @workspace.height - ext.top - ext.bottom
       end
 
       def position_remaining_windows
@@ -22,20 +22,20 @@ module WLayout
       end
 
       def position_window win
-        ext = win[:frame_extents]
-        height = get_win_height ext
-        width = get_win_width ext
+        @ext = FrameExtents.new(win[:frame_extents])
+        height = get_win_height
+        width = get_win_width
         move_resize_window win, width, height
         @y += @real_height
       end
 
-      def get_win_height ext
-        @real_height - ext[2]- ext[3]
+      def get_win_height
+        @real_height - @ext.top - @ext.bottom
       end
 
-      def get_win_width ext
+      def get_win_width
         tmp = @workspace.x + @master[:width_exterior]
-        @workspace.width - tmp - ext[0] - ext[1]
+        @workspace.width - tmp - @ext.left - @ext.right
       end
 
       def move_resize_window win, width, height

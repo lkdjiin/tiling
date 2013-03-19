@@ -9,6 +9,7 @@ require 'wlayout/horizontal_layout'
 require 'wlayout/vertical_layout'
 require 'wlayout/mover'
 require 'wlayout/option'
+require 'wlayout/frame_extents'
 
 
 module WLayout
