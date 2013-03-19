@@ -6,6 +6,7 @@ require 'wlayout/workspace'
 require 'wlayout/windows'
 require 'wlayout/layout'
 require 'wlayout/mover'
+require 'wlayout/option'
 
 
 module WLayout
