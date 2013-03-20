@@ -2,7 +2,7 @@
 
 require 'optparse'
 
-module WLayout
+module Tiling
 
   # Public: Set the options.
   class Option

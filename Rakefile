@@ -1,14 +1,13 @@
 # -*- encoding: utf-8 -*-
 
-# todo: replace GEM by th gem name
 
 require 'rake'
 require 'rspec/core/rake_task'
 
-desc 'Test wlayout'
+desc 'Test'
 task :default => :spec
 
-desc 'Test wlayout with rspec'
+desc 'Test tiling with rspec'
 RSpec::Core::RakeTask.new(:spec) do |t|
   t.rspec_opts = ['--color']
 end
@@ -29,8 +28,8 @@ end
 
 desc 'Build gem & install it'
 task :install do
-  sh "rm wlayout*gem"
-  sh "gem build wlayout.gemspec"
-	f = FileList['wlayout*gem'].to_a
+  sh "rm tiling*gem"
+  sh "gem build tiling.gemspec"
+	f = FileList['tiling*gem'].to_a
 	sh "gem install #{f.first}"
 end

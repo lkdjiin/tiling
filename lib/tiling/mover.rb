@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-module WLayout
+module Tiling
   # Move a window.
   class Mover
     def self.move id, x, y, width, height

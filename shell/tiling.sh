@@ -18,4 +18,4 @@ else
 fi
 
 rvm use 1.9.3-p374@global
-wlayout $1
+tiling $1

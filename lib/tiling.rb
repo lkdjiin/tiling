@@ -2,17 +2,17 @@
 
 gem 'ruby-wmctrl', '0.0.5'
 require 'wmctrl'
-require 'wlayout/workspace'
-require 'wlayout/windows'
-require 'wlayout/layout'
-require 'wlayout/horizontal_layout'
-require 'wlayout/vertical_layout'
-require 'wlayout/mover'
-require 'wlayout/option'
-require 'wlayout/frame_extents'
+require 'tiling/workspace'
+require 'tiling/windows'
+require 'tiling/layout'
+require 'tiling/horizontal_layout'
+require 'tiling/vertical_layout'
+require 'tiling/mover'
+require 'tiling/option'
+require 'tiling/frame_extents'
 
 
-module WLayout
+module Tiling
   def self.run
     options = Option.new
     workspace = Workspace.new

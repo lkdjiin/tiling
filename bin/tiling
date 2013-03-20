@@ -2,9 +2,9 @@
 # -*- encoding: utf-8 -*-
 
 $LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'
-$WLAYOUT_PATH = File.expand_path(File.dirname(__FILE__)) + '/..'
+$TILING_PATH = File.expand_path(File.dirname(__FILE__)) + '/..'
 
-require 'wlayout'
+require 'tiling'
 
-WLayout.run
+Tiling.run
 

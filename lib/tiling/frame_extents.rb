@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-module WLayout
+module Tiling
 
   # Public: Décoration de fenêtre.
   class FrameExtents

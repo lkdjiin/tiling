@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-module WLayout
+module Tiling
 
   # Public: Classe de base pour les layouts.
   class Layout

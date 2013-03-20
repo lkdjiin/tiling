@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-module WLayout
+module Tiling
 
   # Public: Met en place un layout horizontal.
   class HorizontalLayout < Layout
