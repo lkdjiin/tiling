@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors = ['Xavier Nayrac']
   s.email = 'xavier.nayrac@gmail.com'
   s.summary = 'Some windows layouts for (I hope so) any common linux desktop'
-  s.homepage = ''
+  s.homepage = 'https://github.com/lkdjiin/tiling'
   s.description = %q{Tiling provides a simple window tiling system for linux.
 This is for those who cannot (or don't want to) use a tiling window manager like
 awesome or Xmonad.}
