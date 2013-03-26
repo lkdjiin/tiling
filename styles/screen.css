@@ -1,0 +1,88 @@
+html {
+  background-color: #e5dac6;
+  background-image: url('styles/images/lined-bg.jpg');
+}
+
+body {
+  font-family: Arial,Helvetica,Geneva,sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Gabriela', serif;
+}
+
+h1 {
+  font-size: 5em;
+  color: rgb(240, 242, 224);
+  padding-top: 0.1em;
+  padding-bottom: 0.4em;
+  transition: all 0.2s linear 0s;
+}
+
+h1:hover {
+  text-shadow: rgba(252,251,243,0.6) 0 0 7px;
+}
+
+h2 {
+  font-size: 2em;
+  color: rgb(79, 62, 51);
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+p {
+  color: rgb(107, 104, 102);
+  font-size: 1.3em;
+  line-height: 1.3em;
+  padding-bottom: 0.5em;
+}
+
+a {
+  color:#f17517;
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+header {
+  width: 100%;
+  background-color: #6b6866;
+  padding-top:2em;
+}
+
+header p {
+  color: rgb(178, 180, 169);
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+header p.github {
+  margin-top: 1em;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4em;
+  font-size: 0.8em;
+}
+
+.button {
+color: #ffffff;
+padding: 10px;
+text-decoration: none;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border: solid #ffffff 2px;
+background: #f09858;
+}
+.button:hover {
+background: #f17517;
+}
