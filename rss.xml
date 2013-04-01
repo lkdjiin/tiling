@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>RSS TITLE</title>
+    <link>http://www.example.com</link>
+    <description>RSS DESCRIPTION</description>
+    <item>
+      <title>Tiling version 1.0.1</title>
+      <link>http://www.example.com</link>
+      <pubDate>Mon, 01 Apr 2013 00:00:00 +0200</pubDate>
+      <dc:date>2013-04-01T00:00:00+02:00</dc:date>
+    </item>
+    <item>
+      <title>Tiling version 1.0</title>
+      <link>http://www.example.com</link>
+      <pubDate>Wed, 20 Mar 2013 00:00:00 +0100</pubDate>
+      <dc:date>2013-03-20T00:00:00+01:00</dc:date>
+    </item>
+  </channel>
+</rss>
